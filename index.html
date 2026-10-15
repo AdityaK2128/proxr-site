@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ProXR: a screen of their own for your display glasses</title>
+  <meta name="description" content="ProXR turns display glasses into a workspace: real websites, video that floats, up to three windows side by side, with your iPhone as the trackpad and keyboard.">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:title" content="ProXR">
+  <meta property="og:description" content="Your glasses, with a screen of their own. Browse, watch and work on display glasses, with your iPhone as the trackpad.">
+  <meta property="og:image" content="https://adityak2128.github.io/proxr-site/assets/film-poster.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/icon.png">
+  <link rel="apple-touch-icon" href="assets/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="wrap">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="./"><img src="assets/icon.png" alt="" width="34" height="34">ProXR</a>
+      <ul>
+        <li class="optional"><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap">
+        <div class="lenses">
+          <img class="poster" src="assets/lens-poster.jpg" alt="">
+          <video id="lens-video" autoplay muted loop playsinline preload="auto" poster="assets/lens-poster.jpg" aria-hidden="true">
+            <source src="assets/lens-loop.mp4" type="video/mp4">
+          </video>
+          <svg class="rims" viewBox="0 0 1000 400" aria-hidden="true">
+            <defs>
+              <linearGradient id="prism-stroke" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#ff9aa2"/>
+                <stop offset="0.2" stop-color="#ffc48a"/>
+                <stop offset="0.4" stop-color="#f6ee9a"/>
+                <stop offset="0.6" stop-color="#a8f0c6"/>
+                <stop offset="0.8" stop-color="#97d9ff"/>
+                <stop offset="1" stop-color="#b9a6ff"/>
+              </linearGradient>
+              <clipPath id="lens-clip" clipPathUnits="objectBoundingBox">
+                <rect x="0.02" y="0.1" width="0.44" height="0.8" rx="0.134" ry="0.335"/>
+                <rect x="0.54" y="0.1" width="0.44" height="0.8" rx="0.134" ry="0.335"/>
+              </clipPath>
+            </defs>
+            <rect class="rim" pathLength="1" x="20" y="40" width="440" height="320" rx="134"/>
+            <rect class="rim" pathLength="1" x="540" y="40" width="440" height="320" rx="134"/>
+            <path class="bridge" d="M462 150 Q500 108 538 150"/>
+            <circle class="dot" cx="826" cy="236" r="11"/>
+          </svg>
+        </div>
+
+        <div class="hero-copy">
+          <h1 id="hero-title" class="display">Your glasses, with a screen of their own.</h1>
+          <div>
+            <p class="lede">ProXR stops your display glasses mirroring your iPhone and gives them a real workspace: full websites, video that floats, up to three windows side by side. Your iPhone becomes the trackpad, keyboard and remote.</p>
+            <div class="actions">
+              <a class="button" href="#film">
+                <svg viewBox="0 0 14 14" aria-hidden="true"><path d="M3 1.5v11l9-5.5z" fill="currentColor"/></svg>
+                Watch the film
+              </a>
+              <span class="store-note">Coming soon to the App Store</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="film" class="film" aria-labelledby="film-title">
+      <div class="wrap">
+        <header>
+          <h2 id="film-title" class="display">Ninety seconds on the glasses.</h2>
+          <p class="lede">Recorded from ProXR as it runs: what you see is what appears on your glasses.</p>
+        </header>
+        <video controls preload="none" playsinline poster="assets/film-poster.jpg">
+          <source src="assets/proxr-film.mp4" type="video/mp4">
+          Your browser can't play this video. <a href="assets/proxr-film.mp4">Download the film</a>.
+        </video>
+      </div>
+    </section>
+
+    <section id="iphone" aria-labelledby="iphone-title">
+      <div class="wrap">
+        <header>
+          <h2 id="iphone-title" class="display">Your iPhone is the controller.</h2>
+          <p class="lede">You don't need a mouse, a keyboard or a stand. The iPhone in your hand moves the pointer, types and signs you in, and you hardly need to look at it.</p>
+        </header>
+        <div class="phones">
+          <figure>
+            <div class="device"><img src="assets/phone-trackpad.jpg" alt="The iPhone as a trackpad, with glasses connected at 1920 by 1080." loading="lazy"></div>
+            <figcaption>
+              <h3>A trackpad you can feel</h3>
+              <p class="quiet">Glide to move, tap to click, two fingers to scroll and pinch. Haptics tick as you pass over links and buttons.</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <div class="device"><img src="assets/phone-typing.jpg" alt="Typing into a search box on the glasses with the iPhone's keyboard." loading="lazy"></div>
+            <figcaption>
+              <h3>Type with the keyboard you know</h3>
+              <p class="quiet">Autocorrect, dictation and every language your iPhone has. Or type right on the glasses without looking down.</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <div class="device"><img src="assets/phone-login.jpg" alt="Signing in to a website with a password from iPhone Passwords." loading="lazy"></div>
+            <figcaption>
+              <h3>Sign in with Passwords</h3>
+              <p class="quiet">Your passwords stay on your iPhone. Pick an account, confirm with Face ID, and the site on your glasses signs you in.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" aria-labelledby="features-title">
+      <div class="wrap">
+        <header>
+          <h2 id="features-title" class="display">Made for the glasses, not shrunk from a phone.</h2>
+        </header>
+        <div class="shots">
+          <figure class="wide">
+            <img src="assets/windows.jpg" alt="Three windows side by side on the glasses: Apple, Wikipedia and The Verge." loading="lazy">
+            <figcaption>
+              <h3>Up to three windows side by side</h3>
+              <p class="quiet">Research in one, write in another, keep the news in a third. Drag the dividers to size them, minimise one to the dock, swipe up with three fingers to see every tab.</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="assets/desktop.jpg" alt="Apple's website at full desktop size on the glasses." loading="lazy">
+            <figcaption>
+              <h3>The real website, full size</h3>
+              <p class="quiet">Sites see a desktop, so you get the whole page, not the cut-down mobile one.</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="assets/popout.jpg" alt="A video popped out in a floating window over a web page." loading="lazy">
+            <figcaption>
+              <h3>Video that floats</h3>
+              <p class="quiet">Watch full view, or pop a video out and keep it playing over whatever you're doing.</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="assets/reader.jpg" alt="A Wikipedia article with the menu open on the glasses." loading="lazy">
+            <figcaption>
+              <h3>Read, find and darken</h3>
+              <p class="quiet">Reader for just the article, Find on the page, and a dark version of any bright site, easier on the eyes and the battery.</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="assets/voice.jpg" alt="A voice command on the glasses opening YouTube in a new tab." loading="lazy">
+            <figcaption>
+              <h3>Say what you want</h3>
+              <p class="quiet">Hold two fingers on the trackpad and say "open YouTube" or "split view". Speech is understood on your iPhone.</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="assets/photos.jpg" alt="A landscape photo from the iPhone's library, shown large on the glasses." loading="lazy">
+            <figcaption>
+              <h3>Your photos, life-size</h3>
+              <p class="quiet">Your photos and videos on the big screen. They never leave your iPhone.</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="assets/settings.jpg" alt="ProXR's settings on the glasses: themes, pointer, display and websites." loading="lazy">
+            <figcaption>
+              <h3>Set up for your eyes</h3>
+              <p class="quiet">A guided setup for your glasses, edge margins, interface size, ten light themes and your own wallpaper, all changed from the glasses.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="glasses" aria-labelledby="glasses-title">
+      <div class="wrap">
+        <header>
+          <h2 id="glasses-title" class="display">Works with your display glasses.</h2>
+        </header>
+        <ul class="brands" aria-label="Glasses ProXR works with">
+          <li>XREAL</li>
+          <li>VITURE</li>
+          <li>Rokid</li>
+          <li>RayNeo</li>
+          <li>TCL NXTWEAR</li>
+          <li>and more</li>
+        </ul>
+        <div class="needs">
+          <div>
+            <h3>Glasses</h3>
+            <p class="quiet">Any display glasses that plug into an iPhone over USB-C. Monitors and TVs work too.</p>
+          </div>
+          <div>
+            <h3>iPhone</h3>
+            <p class="quiet">An iPhone with USB-C (iPhone 15 or later), on iOS 17 or later.</p>
+          </div>
+          <div>
+            <h3>Nothing else</h3>
+            <p class="quiet">No account and no extra app. Plug in, open ProXR, and the glasses are yours.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" aria-labelledby="pricing-title">
+      <div class="wrap">
+        <header>
+          <h2 id="pricing-title" class="display">Free to try. Yours to keep.</h2>
+          <p class="lede">Download ProXR for free and use every feature for 7 days. After that, browsing in one window stays free, and ProXR Pro is a single purchase. No subscription.</p>
+        </header>
+        <div class="plans">
+          <div class="plan">
+            <div class="price">Free</div>
+            <ul>
+              <li>Browsing in one window, with tabs</li>
+              <li>Your iPhone as trackpad, keyboard and remote</li>
+              <li>Sign in with Passwords</li>
+              <li>Full view for video</li>
+              <li>Reader, Find, voice and dark pages</li>
+            </ul>
+          </div>
+          <div class="plan">
+            <div class="price">$9.99<small>once</small></div>
+            <ul>
+              <li>Everything in Free</li>
+              <li>Up to three windows side by side</li>
+              <li>Pop-out video over your pages</li>
+              <li>Your photos and videos on the glasses</li>
+              <li>Screen recording of your glasses in 1080p</li>
+            </ul>
+          </div>
+        </div>
+        <p class="small trial-note">Prices in US dollars; the App Store shows yours in your own currency. The 7-day trial starts when you choose to start it, and nothing is charged when it ends. Regular feature updates included.</p>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="wrap split">
+        <div>
+          <h2 class="display">Private by design.</h2>
+          <p class="quiet">ProXR has no account, no ads, no analytics and no tracking. Your history, sign-ins and settings are kept on your iPhone, and your photos never leave it.</p>
+          <p><a class="text-link" href="privacy.html">Read the privacy policy</a></p>
+        </div>
+        <div>
+          <h2 id="contact-title" class="display">Questions or ideas?</h2>
+          <p class="quiet">Write in for help, to report a problem, or to say what you'd like ProXR to do next. Every message is read.</p>
+          <a class="mail" href="mailto:ak2128@proton.me?subject=ProXR">ak2128@proton.me</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 ProXR</span>
+      <nav aria-label="Footer">
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    // With reduced motion, the lenses show a still picture instead of the loop.
+    (function () {
+      var video = document.getElementById("lens-video");
+      if (!video) return;
+      var still = window.matchMedia("(prefers-reduced-motion: reduce)");
+      function apply() {
+        if (still.matches) { video.pause(); video.removeAttribute("autoplay"); }
+        else { var p = video.play(); if (p && p.catch) p.catch(function () {}); }
+      }
+      apply();
+      if (still.addEventListener) still.addEventListener("change", apply);
+    })();
+  </script>
+</body>
+</html>
